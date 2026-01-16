@@ -1,6 +1,6 @@
-package software.ulpgc.kata4.io;
+package software.ulpgc.kata6.io;
 
-import software.ulpgc.kata4.model.Movie;
+import software.ulpgc.kata6.model.Movie;
 
 public class TsvMovieParser implements MovieParser{
     @Override

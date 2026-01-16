@@ -1,12 +1,12 @@
-package software.ulpgc.kata4.application.dbloader;
+package software.ulpgc.kata6.application.dbloader;
 
-import software.ulpgc.kata4.application.DatabaseRecorder;
-import software.ulpgc.kata4.application.DatabaseStore;
-import software.ulpgc.kata4.application.MainFrame;
-import software.ulpgc.kata4.io.RemoteMovieLoader;
-import software.ulpgc.kata4.model.Movie;
-import software.ulpgc.kata4.tasks.HistogramBuilder;
-import software.ulpgc.kata4.viewModel.Histogram;
+import software.ulpgc.kata6.application.DatabaseRecorder;
+import software.ulpgc.kata6.application.DatabaseStore;
+import software.ulpgc.kata6.application.MainFrame;
+import software.ulpgc.kata6.io.RemoteMovieLoader;
+import software.ulpgc.kata6.model.Movie;
+import software.ulpgc.kata6.tasks.HistogramBuilder;
+import software.ulpgc.kata6.viewModel.Histogram;
 
 import java.io.File;
 import java.sql.Connection;
