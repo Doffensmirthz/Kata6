@@ -1,5 +1,6 @@
-package software.ulpgc.kata4.application;
+package software.ulpgc.kata4.application.remoteloader;
 
+import software.ulpgc.kata4.application.MainFrame;
 import software.ulpgc.kata4.io.RemoteMovieLoader;
 import software.ulpgc.kata4.model.Movie;
 import software.ulpgc.kata4.tasks.HistogramBuilder;
@@ -14,7 +15,11 @@ public class Main {
         movies = movies.stream()
                 .filter(m -> m.releaseYear() > 1900)
                 .filter(m -> m.releaseYear() < 2050).toList();
-        Histogram histogram = new HistogramBuilder(movies).build(Movie::releaseYear);
+        Histogram histogram = new HistogramBuilder(movies)
+                .title("movies per year")
+                .x("year")
+                .y("frequency")
+                .build(Movie::releaseYear);
 
 
         MainFrame.create()
